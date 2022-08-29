@@ -18,17 +18,27 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>HTML is used to create the structure of a webpage. </li>
+          <li>HTML (Hypertext Markup Language) is used to create the structure of a webpage. </li>
           <li>It is made up of elements which work together to provide content and the basic framework for all pages on the web.</li>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>Elements that are nested inside other elements are called child elements. If there are three elements nested inside of a “body” element, those three nested elements are known as child elements. The element that holds all the children—in this case, the “body” element—is known as the parent element. This “parent/child” language is often used by developers to explain the relationship among elements in HTML.</li>
+          <li>The head element contains information, or "metadata", about the webpage. Metadata is data about our webpage that the browser uses to effectively serve our webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance.</li>
+          <li>Here are some examples of metadata elements that are placed inside the head element. The “title” element defines the title for a webpage. This element is required and is extremely important for Search Enmetagine Optimization (SEO). Search engine optimization (SEO) is the process of improving the ranking of a website in search engines such as Google or Bing. Better SEO results in your website more frequently showing up in searches. The “style” element defines the CSS styles associated with the website. The “base” element defines the base URL for a webpage. The “link” element connects an external resource to the HTML document. The “meta” element defines metadata such as the character set, description, keywords, author, and viewport. The “script” element embeds client-side scripts into the HTML document.
+          </li>
+          <li>The body element represents the visible content shown to the user. Just like the head element, the body is made up of nested child elements. All of the content that we want to display to users must be inside the body element of the HTML.</li>
+          <li>When working with visible HTML elements, the content is contained between an opening tag and a closing tag. These tags are usually represented by angle brackets with associated tag names placed inside. Closing tags begin with a forward slash. We insert the content between an opening tag and a closing tag so that the browser understands how to treat the content.</li>
+          <li>The "h1", "h2", "h3", "h4", "h5", and "h6" elements represent the level of heading a given text block represents. Headings are larger or more prominent titles and subtitles used to organize a page. Text placed in the h1 header will be the largest, while text placed in the h2 header will be the next largest, etc. </li>
+          <li>The “p” element represents a paragraph or block of text. You'll use this element extensively to wrap most of the text on your webpages.</li>
+          <li>The “ul”, “ol”, and “li” elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists.</li>
+          <li>The “br” element creates a line of empty space, or a line break, between two blocks of content. </li>
+          <li>The “a” element (which stands for anchor) creates links to the same webpage or other webpages. The “href” attribute points to the URL for the link. This stands for hypertext reference.</li>
+          <li>“Section” elements are semantic elements that define a section in a document that contains thematic content. These allow us to organize the content of the page based on topics we intend to use.</li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>CSS is used to customize the webpage's style.</li>
+          <li>CSS (Cascading Style Sheets) is used to customize the webpage's style.</li>
           <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
           <li>Inline CSS is what a developer uses when they want to style an element directly in the HTML file.</li>
           <li>The internal style sheet contains CSS rules for the webpage in the head section.</li>
@@ -45,16 +55,59 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
+          <li>Git is the most commonly used version control software among developers. Git lets you manage and keep track of each version of your project.</li>
+          <li>To access Git, we use the command line in our CLI (command line interface). However, Git commands are not the same as the bash commands such as cd and mkdir that we use to navigate and create directories or perform other tasks. Git commands always start with git and are used to save and track versions of your code. Using Git commands, we can initiate (or create) a repo, add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.
+          </li>
+          <li>Git is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool, GitHub. GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely. Using GitHub not only allows us to store our code, but also to easily collaborate with others.</li>
+          <li>The first step in building a project through Github is to create a repository.</li>
+          <li>When we work on our project in our local environment, we need to make sure our GitHub repository is in sync with what is on our own computer. In order to keep the two in sync, we use the GitHub workflow.</li>
+          <li>A branch is a copy or version of the code that can be worked on independently in isolation so development changes do not disrupt other team members who are also working on the code and testing their solutions. When we are typically working on code, it is in an unstable state since we are actively developing the code.</li>
+          <li>The first step to creating a local development version is to create a feature branch. This is the branch where we will be adding our new code. Our default branch is called "main."</li>
+          <li>When we create a new branch to add something new to our project, we call it a feature branch. That is because we are adding a new feature or functionality to our app.</li>
+          <li>In the feature branch, we make commits of all the changes we make to the code while working. We add a commit message that is descriptive of what changed in the code. As a developer, it is important to remember to commit often.</li>
+          <li>Then we push up the changes to our feature branch in our GitHub repository. But that code is still just in our feature branch and not our main branch. In order to merge our changes to the main branch, we need to open a pull request in our Github repository.</li>
+          <li>A pull request, or PR, is used to merge a comparison branch (in our case, the feature branch) into the base branch. The base branch is where the changes will be merged into, in our case the default branch, main.</li>
+          <li>Once the PR is opened, other developers and collaborators on your team can view those changes you made to the code. They can then comment on it, request changes, and even have a conversation about your changes. You can also view any conflicts you have between your comparison branch and base branch on your PR and resolve them.</li>
+          <li>Once your PR is approved, you can merge it into the main branch. After you do that, the code in the main branch is updated with your changes. From this point on, when you want to make another change to the application, you will branch off of this updated main branch.</li>
+          <li>When we work on our project in our local environment, we need to make sure our GitHub repository is in sync with what is on our own computer. In order to keep the two in sync, we use the GitHub workflow.</li>
+          <li>The following are useful git functions for you to remember.</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git pull: fetch and merge any commits from the tracking remote branch</li>
+          <li>git pull origin main: uses the pull command to receive a branch's modifications into the local environment; the origin keyword indicates the source of the pull will be in the GitHub repo; the main keyword indicates the branch. </li>
+          <li>git push [alias] [branch]: Transmit local branch commits to the remote repository branch</li>
+          <li>git status: check what branch you are on</li>
+          <li>git checkout: move the working branch to a new branch.</li>
+          <li>git add -A: adds changes to the working branch into the staging area; then the "A" indicates that we want to add all changes; the staging area informs Git that the changes will be added in the next commit</li>
+          <li></li>
         </ul>
    
       </section>
    
       <section class="card" id="javascript-section">
-        <h2>Javascript</h2>
+        <h2>JavaScript</h2>
         <ul>
-          <li>Enter your Javascript notes here.</li>
+          <li>In web development, JavaScript is the tool that takes a static HTML/CSS webpage and makes it interactive.</li>
+          <li>Using JavaScript, you can power your websites with effects, interactivity, data communication, and much more.</li>
+          <li>In JavaScript, a variable is a named container that allows us to store data in our code.</li>
+          <li>To declare a variable, we use the "var" keyword. After the var keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li>There are multiple kinds of variables.</li>
+          <li>Strings are variables that are sequences of text. These are enclosed in single quote marks.</li>
+          <li>Numbers can also be variables. Numbers do not have quotes around them.</li>
+          <li>Boolean values are variables that are either true or false. The words true and false are special keywords that don't need quote marks.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way. To create an array, we declare a variable in the same way that we declared a variable with only one data item. That is, we use "var" and then give the variable a name. However, instead of assigning the variable to a single value, we assign the variable to a group of values.</li>
+          <li>When working with single data items, we simply used the variable name to access the stored data. To work with individual data items inside an array, we need to have one more piece of information: the location of the data item in the array. This location is identified with a unique number called an index. Using each piece of data's index, or location number, we can access individual data inside the array. In JavaScript and in many other programming languages, the first item in any array has an index of 0, not 1.
+            </li>
+          <li>A "for" loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. This is helpful when you have arrays with many items. If we did not use for loops, for example, we would have to manually enter a code block for each of the items in our array (this would be very tedious if we had an array with a thousand items). The for loop consists of the keyword for, followed by a three-part conditional statement, followed by a code block that defines the code to execute at each iterative step.</li>
+          <li>To put this in pseudocode, we could say: “for a variable x that is 0; run code inside the loop while x is less than the length of our array; increment x by 1.” The process will repeat until x hits the length of our array, which is 4.</li>
+          <li>Conditionals are code structures used to test if an expression returns true or not.</li>
+          <li>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code.</li>
+          <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page. The order of our code matters. However, control flow can be interrupted.</li>
+          <li>We can use conditional statements and loops to control the order in which code is executed, or if it is even executed at all. There are multiple ways to create conditional statements in Javascript.</li>
+          <li>An “if” statement is a way of introducing decision making into our code. When using the if statement, code will only execute if the statement meets a condition, or is true.</li>
+          <li>A function is a set of instructions that tells the computer how to perform a certain task. Functions have two requirements: 1. Define the function (use a function declaration) 2. Call the function. 
+          </li>
+          <li>We link the JavaScript file within the "body" element of the HTML. (Recall that we link the CSS file within the "head" element of the HTML).</li>
+          <li>Chrome DevTools is an extremely valuable developer tool that developers use everyday. For example, to ensure that our JavaScript file is linking to our HTML file, we can do the following: In the JavaScript file that is linked to the webpage you are working on, you can create a variable and give it a value. You can then use the “console.log” method to log the variable to the web console in the browser. Then, you can go to the (refreshed) webpage you are working on and open Chrome DevTools (right-click on your webpage, click on Inspect, then click on the Console tab). In our console, we should see that our variable is there along with the value we placed into it. If it is not, we know that the JavaScript file is not linked to our HTML file properly.</li>
         </ul>
    
       </section>
@@ -63,5 +116,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
