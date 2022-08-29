@@ -19,6 +19,7 @@
         <h2>HTML</h2>
         <ul>
           <li>HTML (Hypertext Markup Language) is used to create the structure of a webpage. </li>
+          <li>HTML files end in ".html".</li>
           <li>It is made up of elements which work together to provide content and the basic framework for all pages on the web.</li>
           <li>Elements that are nested inside other elements are called child elements. If there are three elements nested inside of a “body” element, those three nested elements are known as child elements. The element that holds all the children—in this case, the “body” element—is known as the parent element. This “parent/child” language is often used by developers to explain the relationship among elements in HTML.</li>
           <li>The head element contains information, or "metadata", about the webpage. Metadata is data about our webpage that the browser uses to effectively serve our webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance.</li>
@@ -39,15 +40,24 @@
         <h2>CSS</h2>
         <ul>
           <li>CSS (Cascading Style Sheets) is used to customize the webpage's style.</li>
+          <li>Files that are formatted in CSS end in ".css".</li>
           <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
           <li>Inline CSS is what a developer uses when they want to style an element directly in the HTML file.</li>
-          <li>The internal style sheet contains CSS rules for the webpage in the head section.</li>
+          <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only. They are useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+          <li>An example of inline CSS is using the style attribute to change the color of a single h1 heading.</li>
+          <li>It is also possible to embed an entire stylesheet directly in the HTML file using a style element in the head element. This internal style sheet contains CSS rules for the webpage in the head section. The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code. Again, a single change to the CSS rule will apply to all tagged page elements.</li>
           <li>The rules will only apply to that page. You can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code.</li>
-          <li>The most common way to style a webpage is by using an external CSS style sheet.</li>
+          <li>Inline CSS and internal style sheets are totally acceptable methods under certain conditions, but the most common way to style a webpage is by using an external CSS style sheet.</li>
           <li>This is preferred in most cases because it allows developers to keep all their CSS rules in a separate file, which makes design changes easier.</li>
+          <li>When using an external style sheet, we link the file using a link element placed in the HTML's head.</li>
+          <li>Using an external style sheet allows us to adhere to the design principle "Separation of Concerns." Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. Separation of concerns is based on the idea that each section of code should have its own responsibility.</li>
+          <li>A selector defines the element or attributes to which the rules, or declarations, will apply.</li>
+          <li>Declarations contain two important components: the CSS property we want to apply and the value of the property. For example, the declaration color: blue; includes the CSS property color and the value for that property, blue.</li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
           <li>We style card elements by using the class attribute, .card, as a selector in the style sheet.</li>
+          <li>Sometimes, we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or *.</li>
+          <li>Besides text, we can also apply CSS rules to images.</li>
           <li>The web developer must remember to link the HTML and CSS files in order for the changes made in the CSS file to take place in the HTML file.</li>
         </ul>
       </section>
@@ -78,7 +88,6 @@
           <li>git status: check what branch you are on</li>
           <li>git checkout: move the working branch to a new branch.</li>
           <li>git add -A: adds changes to the working branch into the staging area; then the "A" indicates that we want to add all changes; the staging area informs Git that the changes will be added in the next commit</li>
-          <li></li>
         </ul>
    
       </section>
